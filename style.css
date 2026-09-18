@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f2d3a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+}
+
+.notification {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.notification.failed {
+    background: #ffe6e6;
+    border: 2px solid red;
+    color: #a00000;
+}
+
+.notification h3 {
+    margin-top: 0;
+}
+
+.notification p {
+    margin-bottom: 0;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.reserved {
+    color: red;
+    font-weight: bold;
+}
+
+/* ==========================================
+   TRANSACTION MESSAGE
+   ========================================== */
+
+.message {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.message.success {
+    border-top: 7px solid green;
+}
+
+.message.failed {
+    border-top: 7px solid red;
+}
+
+.icon {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message.success .icon {
+    color: green;
+}
+
+.message.failed .icon {
+    color: red;
+}
+
+.message h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.details {
+    text-align: left;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.details p {
+    margin: 8px 0;
+}
+
+/* ==========================================
+   ERROR DESCRIPTION
+   ========================================== */
+
+.error-description {
+    background: #ffecec;
+    border-left: 5px solid red;
+    padding: 18px;
+    margin: 25px 0;
+    text-align: left;
+    border-radius: 6px;
+}
+
+.error-description p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   TRANSACTION STATUS
+   ========================================== */
+
+.transaction {
+    padding: 18px;
+    border-radius: 8px;
+    margin: 25px 0;
+    font-size: 18px;
+}
+
+.transaction p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.success-transaction {
+    background: #eaf7ea;
+    border: 1px solid green;
+    color: green;
+}
+
+.failed-transaction {
+    background: #fff0f0;
+    border: 1px solid red;
+    color: red;
+}
+
+/* ==========================================
+   FAILED NOTICE
+   ========================================== */
+
+.notice {
+    background: #fff8e1;
+    border: 1px solid #e0a800;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    color: #6b4e00;
+}
+
+/* ==========================================
+   BUTTON
+   ========================================== */
+
+.back-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background: #1f2d3a;
+}
